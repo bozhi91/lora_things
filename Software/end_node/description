@@ -1,0 +1,60 @@
+
+
+
+=== Gateway Module ===
+
+Model: cubecell htcc-ab01 
+Caracteristicas: 
+	
+	arduino
+	comandos AT
+	bajo consumo - 3.5 uA
+	LoraWAN
+	windows, linux, macOS
+	Frequencias disponibles: 868Mhz(EU), 915MHz(USA)
+ESP32 Chip ID = 1C1D5CC40A24
+
+
+
+	###################################################
+
+	INDEX
+
+	Introduccion al proyecto
+		Esquematico del proyecto
+		Comparar tecnologias
+		por que estas tecnoligias y no otras
+		Ventajas e inconvenientes
+
+	Instalacion
+		Como instalar el hardware/Software(descripcion, consejos, etc)
+		Caracteristicas tecnicas
+		Como hacer que los dispositivos se comuniquen(descripcion, consejos, posibles problemas, etc)
+		Comunicacion entre nodo final y gateway(punto a punto)
+		Comunicacion entre multiples nodos y gateway(punto a multipunto) - ventajas, problemas, consejos, limitaciones
+
+
+	Comunicacion	
+		Describir el protocolo de comunicacion entre dispositivos(nodo final y gateway)
+		Describir el protocolo de comunicacion entre gateway y el servidor/Internet
+		Como procesamos/almacenamos la informacion al servidor
+		Como recuperamos esta informaicon
+
+
+		Que tipo de comunicacion LORA usamos? ¿Clase A, B o C? ¿Por que?
+
+
+
+analtop.cam
+
+
+
+
+
+
+
+
+
+
+
+

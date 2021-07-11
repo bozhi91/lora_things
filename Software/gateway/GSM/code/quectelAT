@@ -1,0 +1,99 @@
+
+########## SEND SMS ##########
+
+AT+CMGF=1
+AT+CMGS="+34662587797"
+>Write your message
+>0x1A
+
+############# SEND GET REQUEST #############
+AT
+AT+CPIN=1111
+AT+CREG?
+at+ipr = 115200
+ATE  - disable echo
+AT&W - save user profile
+
+AT+SAPBR=3,1,"Contype","GPRS"
+AT+SAPBR=3,1,"APN","ac.vodafone.es"
+AT+SAPBR=1,1
+
+AT+HTTPINIT
+AT+HTTPPARA="CID",1
+AT+HTTPPARA="URL","http://urlecho.appspot.com/echo?status=200&body=quetal"
+AT+HTTPACTION=0
+AT+HTTPREAD
+AT+HTTPTERM
+
+############# SEND POST REQUEST TO HTTPS SERVER #############
+
+//Configure the GSM/GPRS module(Run once only!)
+AT+IPR=115200
+
+AT+SAPBR=3,1,"Contype","GPRS"
+AT+SAPBR=3,1,"APN","ac.vodafone.es"
+AT+SAPBR=1,1
+AT+SAPBR=2,1 
+
+//Send the HTTPS POST request
+
+AT+HTTPINIT
+AT+HTTPPARA="CID",1
+AT+HTTPPARA="URL","http://demo.thingsboard.io/api/v1/T4heef9dzbcuejT5qegC/telemetry"
+AT+HTTPPARA="CONTENT","application/json"
+AT+HTTPDATA=29,5000
+{"payload":[23,0,0,0,0,1,20]}
+AT+HTTPACTION=1
+AT+HTTPTERM
+
+*AT+HTTPSSL=1
+*at+CIPSSL=1
+
+
+#### UTIL URLS ####
+http://www.raviyp.com/sim900-gprs-http-at-commands/#google_vignette
+
+https://www.cooking-hacks.com/forum/viewtopic.php?f=34&t=7515
+https://simcom.ee/modules/gsm-gprs/sim800c/
+
+https://m2msupport.net/m2msupport/data-call-at-commands-to-set-up-gprsedgeumtslte-data-call/
+
+https://tlfong01.blog/2020/03/22/sim7600-at-command-tutorial/
+
+http://www.raviyp.com/sim900-gprs-http-at-commands/#google_vignette
+
+https://stackoverflow.com/questions/35781962/post-api-rest-with-at-commands-sim800
+
+
+https://www.cooking-hacks.com/forum/viewtopic.php?f=34&t=7515
+
+
+
+#### More info at:
+https://www.electronicwings.com/arduino/http-client-using-sim900a-gprs-and-arduino-uno
+
+https://how2electronics.com/sim900-800-http-post-request-json-format-arduino/
+
+https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
+
+
+https://www.arduino.cc/en/Reference/GSM
+
+https://www.arduino.cc/en/Reference/GSMClientConnected
+
+https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
+
+https://arduino.stackexchange.com/questions/24837/send-data-using-arduino-gsm-shield-get-post-put
+
+https://ubidots.com/community/t/solved-cant-send-context-data-with-arduino-gsm-shield/228/3
+
+
+https://github.com/vshymanskyy/TinyGSM
+
+
+
+https://github.com/researchdesignlab/GSM-GPRS-SIM800C-Modem
+AT+CBC
+
+
+https://www.raviyp.com/learn-how-to-update-the-firmware-of-your-sim800-modules/

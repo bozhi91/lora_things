@@ -1,0 +1,61 @@
+This is a handy, low power Raspberry Pi HAT which features multi communication functionalities: GSM, GPRS, and Bluetooth.
+
+It allows your Pi to easily send messages, connect to wireless Internet, transfer data via Bluetooth, and so on.
+
+GSM/GPRS
+
+Band
+
+    GSM 850/EGSM 900/DCS 1800/PCS 1900 MHz
+    Quad-band auto search
+    Compliant to GSM phase 2/2+
+
+Emitting power
+
+    Class 4 (2W @ GSM 850/EGSM 900 MHz)
+    Class 1 (1W @ DCS 1800/PCS 1900 MHz)
+
+GPRS connectivity
+
+    GPRS multi-slot class 12 (default)
+    GPRS multi-slot class 1~12 (configurable)
+
+GPRS data feature
+
+    Downlink speed: max 85.6kbps
+    Uplink speed: max 85.6kbps
+    Coding schemes: CS-1\CS-2\CS-3\CS-4
+    Supports PAP (Password Authentication Protocol) for PPP connection
+    Supports PBCCH
+    Supports USSD
+
+SMS
+
+    Supports: MT/MO/CB/Text/PDU mode
+    SMS storage: SIM card
+
+Bluetooth
+
+    Integrates AT commands
+    Compliant to Bluetooth specification3.0 + EDR
+    Supports SPP, OPP, HFP/HSP, etc.
+
+Misc
+
+    Power supply: 5V (USB port OR pinheader)
+    Logic level: 5V / 3.3V (default)
+    Operating temperature: -40°C ~ 85°C
+    Storage temperature: -45°C ~ 90°C
+    Dimensions: 30.2mm x 65mm
+
+Package Content
+
+    SIM800C GSM/GPRS HAT x1
+    GSM Antenna x1
+    Bluetooth Antenna x1
+    USB type A plug to micro plug cable x1
+    RPi screws pack (2pcs) x1
+
+Development Resources
+
+Wiki : www.waveshare.com/wiki/SIM800C_GSM/GPRS_HAT?Amazon
